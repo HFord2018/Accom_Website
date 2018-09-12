@@ -49,14 +49,4 @@ public class Search {
 			System.out.println("Exception : " + e);
 		}
 	}
-	
-	public static void main(String[] args) {
-		MyDAO dao = new MyDAO();
-		
-		if(dao.loginCheck("piotr", "123")) {
-			System.out.println("Login Success!!");
-		} else {
-			System.out.println("Login Failed!!");
-		}
-	}
 }

@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ page import="dao.Home" %>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="dao.Properties" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,10 +19,10 @@
 <h4> The following properties are available</h4>
 
 <%
-Accommodation acc = new Accommodation();
-ArrayList<X> properties = acc.getAll();
+Home home = new Home();
+ArrayList<Properties> properties = home.getAllProperties();
 
-for(X property : properties) { %>
+for(Properties property : properties) { %>
 	<p><%= property %></p>
 <% } %>
 
